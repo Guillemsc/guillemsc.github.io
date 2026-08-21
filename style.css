@@ -53,6 +53,12 @@ a:hover {
     border-color: var(--brand-accent);
 }
 
+hr {
+    border: none;                             /* Removes browser default 3D bevel */
+    height: 1px;                              /* Sets line thickness */
+    background-color: var(--brand-accent);    /* Sets the line color */
+}
+
 ul {
     list-style-type: disc;
     margin-top: 6px;
@@ -61,9 +67,9 @@ ul {
 
 /* Names List: Upright Bold Sans-Serif */
 li {
-    font-family: var(--font-sans);
-    font-weight: 700;
+    font-family: var(--font-serif);
     font-style: normal;
     font-size: 1rem;
     margin-bottom: 3px;
+
 }
