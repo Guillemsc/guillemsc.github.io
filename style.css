@@ -6,16 +6,47 @@
     --font-sans: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+html {
+    scrollbar-gutter: stable;
+    padding: 20px 20px;        /* Creates guaranteed outer breathing room on mobile */
+}
+
 /* Base Body Setup */
 body {
     font-family: var(--font-serif);
     line-height: 1.35;
     color: var(--text-color);
     background-color: #fff;
-    max-width: 400px;
-    margin: 40px auto;
+
+    /* Responsive sizing instead of fixed width */
+    width: 90%;             /* Fills 90% of screen width on small displays */
+    max-width: 420px;       /* Caps width at 420px on desktops */
+    margin: 20px auto;      /* Centers card horizontally on all screens */
+
     border: 1px solid var(--brand-accent);
-    padding: 20px;
+    padding: 18px 22px;
+}
+
+/* 2. Mobile Responsive Adjustments (Screens 480px and under) */
+@media (max-width: 480px) {
+    body {
+        width: 94%;         /* Expands card slightly on phones for better text area */
+        margin: 12px auto;  /* Reduces top/bottom outer margins */
+        padding: 14px 16px; /* Tighter inner padding so text doesn't feel cramped */
+    }
+
+    h1 {
+        font-size: 1.75rem; /* Scales heading down slightly to prevent multi-line wraps */
+        margin-bottom: 10px;
+    }
+
+    p, li {
+        font-size: 0.95rem; /* Slightly smaller body text for small screens */
+    }
+
+    hr {
+        margin: 10px 0;     /* Reduces vertical spacing around dividers */
+    }
 }
 
 /* Force Paragraphs into Italic Georgia */
