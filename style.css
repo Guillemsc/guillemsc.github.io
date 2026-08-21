@@ -6,6 +6,10 @@
     --font-sans: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html {
     scrollbar-gutter: stable;
     padding: 20px 20px;        /* Creates guaranteed outer breathing room on mobile */
