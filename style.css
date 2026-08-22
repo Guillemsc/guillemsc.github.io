@@ -15,6 +15,32 @@ html {
     padding: 20px 20px;        /* Creates guaranteed outer breathing room on mobile */
 }
 
+.header {
+    display: flex;
+    align-items: center; /* Vertically centers the logo and text */
+    justify-content: center;
+    gap: 16px;           /* Sets space between logo and heading */
+    margin-bottom: 24px;
+    padding: 0 34px;
+}
+
+.header h1 span {
+    display: block;
+    line-height: 1; /* Adjusts the tightness between Guillem and Sunyer */
+}
+
+/* Logo sizing */
+.logo {
+    width: 148px;  /* Adjust size as needed */
+    height: 148px;
+    object-fit: contain;
+}
+
+/* Remove default top/bottom margins from h1 so it stays aligned */
+.header h1 {
+    margin: 0;
+}
+
 /* Base Body Setup */
 body {
     font-family: var(--font-serif);
@@ -70,6 +96,7 @@ h1 {
     margin-top: 0;
     margin-bottom: 12px;
     letter-spacing: -0.02em;
+    color: var(--brand-accent);
 }
 
 /* Links: Upright Bold Sans-Serif */
