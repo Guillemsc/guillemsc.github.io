@@ -64,12 +64,7 @@ body {
         margin: 12px auto;  /* Reduces top/bottom outer margins */
         padding: 14px 16px; /* Tighter inner padding so text doesn't feel cramped */
     }
-
-    h1 {
-        font-size: 1.75rem; /* Scales heading down slightly to prevent multi-line wraps */
-        margin-bottom: 10px;
-    }
-
+    
     p, li {
         font-size: 0.95rem; /* Slightly smaller body text for small screens */
     }
