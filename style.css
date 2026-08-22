@@ -135,7 +135,7 @@ li
 
 @media (max-width: 450px)
 {
-    .logo { max-width: 100px; }
+    .logo { max-width: 110px; }
     .header { padding: 0 14px; }
     .header-text h1 { font-size: 2.0rem; }
     p, li { font-size: 0.9rem; /* Slightly smaller body text for small screens */ }
