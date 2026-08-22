@@ -1,48 +1,55 @@
-:root {
+:root
+{
     --brand-accent: #0774e0;
     --text-color: #111;
-    /* Updated font stack to guarantee Georgia or another serif is found */
     --font-serif: Georgia, "Times New Roman", Times, serif;
     --font-sans: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-*, *::before, *::after {
+*, *::before, *::after
+{
     box-sizing: border-box;
 }
 
-html {
+html
+{
     scrollbar-gutter: stable;
-    padding: 20px 20px;        /* Creates guaranteed outer breathing room on mobile */
+    padding: 20px 20px;
 }
 
-.header {
+.header
+{
     display: flex;
-    align-items: center; /* Vertically centers the logo and text */
+    align-items: center;
     justify-content: center;
-    gap: 16px;           /* Sets space between logo and heading */
+    gap: 16px;
     margin-bottom: 24px;
     padding: 0 24px;
 }
 
-.header h1 span {
+.header h1 span
+{
     display: block;
-    line-height: 1; /* Adjusts the tightness between Guillem and Sunyer */
+    line-height: 1;
 }
 
 /* Logo sizing */
-.logo {
-    width: 148px;  /* Adjust size as needed */
+.logo
+{
+    width: 148px;
     height: 148px;
     object-fit: contain;
 }
 
 /* Remove default top/bottom margins from h1 so it stays aligned */
-.header h1 {
+.header h1
+{
     margin: 0;
 }
 
 /* Base Body Setup */
-body {
+body
+{
     font-family: var(--font-serif);
     line-height: 1.35;
     color: var(--text-color);
@@ -57,29 +64,9 @@ body {
     padding: 18px 22px;
 }
 
-/* 2. Mobile Responsive Adjustments (Screens 480px and under) */
-@media (max-width: 480px) {
-    header {
-        padding: 0 0px;
-    }
-
-    body {
-        width: 94%;         /* Expands card slightly on phones for better text area */
-        margin: 12px auto;  /* Reduces top/bottom outer margins */
-        padding: 14px 16px; /* Tighter inner padding so text doesn't feel cramped */
-    }
-
-    p, li {
-        font-size: 0.85rem; /* Slightly smaller body text for small screens */
-    }
-
-    hr {
-        margin: 10px 0;     /* Reduces vertical spacing around dividers */
-    }
-}
-
 /* Force Paragraphs into Italic Georgia */
-p {
+p
+{
     font-family: var(--font-serif);
     font-style: italic !important; /* Forces italic Georgia on all body text */
     font-size: 1.05rem;
@@ -88,7 +75,8 @@ p {
 }
 
 /* Headings: Clean Bold Sans-Serif */
-h1 {
+h1
+{
     font-family: var(--font-sans);
     font-size: 2.4rem;
     font-weight: 700;
@@ -99,7 +87,8 @@ h1 {
 }
 
 /* Links: Upright Bold Sans-Serif */
-a {
+a
+{
     font-family: var(--font-sans);
     font-weight: 700;
     font-style: normal; /* Keeps link titles straight and upright */
@@ -110,27 +99,43 @@ a {
     margin: 14px 0;
 }
 
-a:hover {
+a:hover
+{
     border-color: var(--brand-accent);
 }
 
-hr {
+hr
+{
     border: none;                             /* Removes browser default 3D bevel */
     height: 1px;                              /* Sets line thickness */
     background-color: var(--brand-accent);    /* Sets the line color */
 }
 
-ul {
+ul
+{
     list-style-type: disc;
     margin-top: 6px;
     margin-bottom: 10px;
 }
 
 /* Names List: Upright Bold Sans-Serif */
-li {
+li
+{
     font-family: var(--font-serif);
     font-style: normal;
     font-size: 1rem;
     margin-bottom: 3px;
 
+}
+
+@media (max-width: 450px)
+{
+    header {padding: 0 0px;}
+    p, li { font-size: 0.9rem; /* Slightly smaller body text for small screens */ }
+    hr { margin: 10px 0; /* Reduces vertical spacing around dividers */ }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)
+{
+    body, h1 { font-weight: 200; }
 }
