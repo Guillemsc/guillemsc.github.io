@@ -59,12 +59,16 @@ body {
 
 /* 2. Mobile Responsive Adjustments (Screens 480px and under) */
 @media (max-width: 480px) {
+    header {
+        padding: 0 0px;
+    }
+
     body {
         width: 94%;         /* Expands card slightly on phones for better text area */
         margin: 12px auto;  /* Reduces top/bottom outer margins */
         padding: 14px 16px; /* Tighter inner padding so text doesn't feel cramped */
     }
-    
+
     p, li {
         font-size: 0.95rem; /* Slightly smaller body text for small screens */
     }
