@@ -21,7 +21,7 @@ html {
     justify-content: center;
     gap: 16px;           /* Sets space between logo and heading */
     margin-bottom: 24px;
-    padding: 0 34px;
+    padding: 0 24px;
 }
 
 .header h1 span {
@@ -70,7 +70,7 @@ body {
     }
 
     p, li {
-        font-size: 0.95rem; /* Slightly smaller body text for small screens */
+        font-size: 0.85rem; /* Slightly smaller body text for small screens */
     }
 
     hr {
